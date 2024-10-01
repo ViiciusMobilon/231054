@@ -42,8 +42,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtpesquisar = new System.Windows.Forms.TextBox();
             this.bntpesquisa = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.DgvCidades = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvCidades)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -102,6 +102,7 @@
             this.btnincluir.TabIndex = 6;
             this.btnincluir.Text = "incluir";
             this.btnincluir.UseVisualStyleBackColor = true;
+            this.btnincluir.Click += new System.EventHandler(this.btnincluir_Click);
             // 
             // bntalterar
             // 
@@ -111,6 +112,7 @@
             this.bntalterar.TabIndex = 7;
             this.bntalterar.Text = "Alterar";
             this.bntalterar.UseVisualStyleBackColor = true;
+            this.bntalterar.Click += new System.EventHandler(this.bntalterar_Click);
             // 
             // bntcancelar
             // 
@@ -120,6 +122,7 @@
             this.bntcancelar.TabIndex = 8;
             this.bntcancelar.Text = "Cancelar";
             this.bntcancelar.UseVisualStyleBackColor = true;
+            this.bntcancelar.Click += new System.EventHandler(this.bntcancelar_Click);
             // 
             // bntexcluir
             // 
@@ -129,6 +132,7 @@
             this.bntexcluir.TabIndex = 9;
             this.bntexcluir.Text = "Excluir";
             this.bntexcluir.UseVisualStyleBackColor = true;
+            this.bntexcluir.Click += new System.EventHandler(this.bntexcluir_Click);
             // 
             // Fechar
             // 
@@ -138,6 +142,7 @@
             this.Fechar.TabIndex = 10;
             this.Fechar.Text = "Fechar";
             this.Fechar.UseVisualStyleBackColor = true;
+            this.Fechar.Click += new System.EventHandler(this.Fechar_Click);
             // 
             // label4
             // 
@@ -163,14 +168,16 @@
             this.bntpesquisa.TabIndex = 13;
             this.bntpesquisa.Text = "Pesquisar";
             this.bntpesquisa.UseVisualStyleBackColor = true;
+            this.bntpesquisa.Click += new System.EventHandler(this.bntpesquisa_Click);
             // 
-            // dataGridView1
+            // DgvCidades
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 304);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(536, 134);
-            this.dataGridView1.TabIndex = 14;
+            this.DgvCidades.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DgvCidades.Location = new System.Drawing.Point(12, 304);
+            this.DgvCidades.Name = "DgvCidades";
+            this.DgvCidades.Size = new System.Drawing.Size(536, 134);
+            this.DgvCidades.TabIndex = 14;
+            this.DgvCidades.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvCidades_CellClick);
             // 
             // FrmCidades
             // 
@@ -178,7 +185,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(673, 566);
             this.ControlBox = false;
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.DgvCidades);
             this.Controls.Add(this.bntpesquisa);
             this.Controls.Add(this.txtpesquisar);
             this.Controls.Add(this.label4);
@@ -196,7 +203,8 @@
             this.Name = "FrmCidades";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro de Cidades";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.FrmCidades_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.DgvCidades)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -218,6 +226,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtpesquisar;
         private System.Windows.Forms.Button bntpesquisa;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView DgvCidades;
     }
 }

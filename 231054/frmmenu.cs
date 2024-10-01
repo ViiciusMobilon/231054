@@ -1,4 +1,5 @@
-﻿using System;
+﻿using _231054.Views;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,6 +8,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using _231054.Views;
+using _231054.Models;
+
 
 namespace _231054
 {
@@ -21,5 +25,12 @@ namespace _231054
         {
             Banco.CriarBanco();
         }
+
+        private void cidadesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmCidades form = new FrmCidades();
+            form.Show();
+        }
+
     }
 }

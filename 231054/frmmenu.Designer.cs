@@ -57,6 +57,7 @@
             this.cidadesToolStripMenuItem.Name = "cidadesToolStripMenuItem";
             this.cidadesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.cidadesToolStripMenuItem.Text = "cidades";
+            this.cidadesToolStripMenuItem.Click += new System.EventHandler(this.cidadesToolStripMenuItem_Click);
             // 
             // frmmenu
             // 
