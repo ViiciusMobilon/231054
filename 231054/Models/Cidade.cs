@@ -91,7 +91,7 @@ namespace _231054.Models
             try
             {
                 Banco.AbrirConexao();
-                Banco.Comando = new MySqlCommand("SELECT * FROM Cidades where nome like @nome" +
+                Banco.Comando = new MySqlCommand("SELECT * FROM Cidades where nome like @nome " +
                                                                 "order by nome", Banco.Conexao);
                 Banco.Comando.Parameters.AddWithValue("@nome", nome + "%");
                 Banco.Adaptador = new MySqlDataAdapter(Banco.Comando);

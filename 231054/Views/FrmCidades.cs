@@ -21,7 +21,7 @@ namespace _231054.Views
         void LimparControles()
         {
             txtID.Clear();
-            txtnome.Clear();
+            txtNome.Clear();
             txtpesquisar.Clear();
             txtUF.Clear();
         }
@@ -52,10 +52,10 @@ namespace _231054.Views
 
         private void btnincluir_Click(object sender, EventArgs e)
         {
-            if (txtnome.Text == string.Empty) return;
+            if (txtNome.Text == string.Empty) return;
             c = new Cidade()
             {
-                nome = txtnome.Text,
+                nome = txtNome.Text,
                uf = txtUF.Text
             };
 
@@ -69,18 +69,27 @@ namespace _231054.Views
             if (DgvCidades.RowCount > 0) 
             {
              txtUF.Text = DgvCidades.CurrentRow.Cells["id"].Value.ToString();
-             txtnome.Text = DgvCidades.CurrentRow.Cells["nome"].Value.ToString();
+             txtNome.Text = DgvCidades.CurrentRow.Cells["nome"].Value.ToString();
                 txtUF.Text = DgvCidades.CurrentRow.Cells["uf"].Value.ToString();
             }
         }
 
-        private void bntalterar_Click(object sender, EventArgs e)
+        
+
+
+
+        private void Fechar_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void bntAlterar_Click(object sender, EventArgs e)
         {
             if (txtID.Text == string.Empty) return;
             c = new Cidade()
             {
                 id = int.Parse(txtID.Text),
-                nome = txtnome.Text,
+                nome = txtNome.Text,
                 uf = txtUF.Text
             };
             c.Alterar();
@@ -88,7 +97,7 @@ namespace _231054.Views
             carregarGrid("");
         }
 
-        private void bntexcluir_Click(object sender, EventArgs e)
+        private void bntExcluir_Click(object sender, EventArgs e)
         {
             if (txtID.Text == "") return;
             if (MessageBox.Show("Deseja excluir a cidade?", "Exclusão",
@@ -102,11 +111,6 @@ namespace _231054.Views
                 LimparControles();
                 carregarGrid("");
             }
-        }
-
-        private void Fechar_Click(object sender, EventArgs e)
-        {
-            Close();
         }
     }
 }

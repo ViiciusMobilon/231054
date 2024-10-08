@@ -30,18 +30,18 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.txtID = new System.Windows.Forms.TextBox();
-            this.txtnome = new System.Windows.Forms.TextBox();
+            this.txtNome = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtUF = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.btnincluir = new System.Windows.Forms.Button();
-            this.bntalterar = new System.Windows.Forms.Button();
-            this.bntcancelar = new System.Windows.Forms.Button();
-            this.bntexcluir = new System.Windows.Forms.Button();
-            this.Fechar = new System.Windows.Forms.Button();
+            this.btnIncluir = new System.Windows.Forms.Button();
+            this.bntAlterar = new System.Windows.Forms.Button();
+            this.bntCancelar = new System.Windows.Forms.Button();
+            this.bntExcluir = new System.Windows.Forms.Button();
+            this.btnFechar = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.txtpesquisar = new System.Windows.Forms.TextBox();
-            this.bntpesquisa = new System.Windows.Forms.Button();
+            this.bntPesquisa = new System.Windows.Forms.Button();
             this.DgvCidades = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.DgvCidades)).BeginInit();
             this.SuspendLayout();
@@ -62,12 +62,12 @@
             this.txtID.Size = new System.Drawing.Size(100, 20);
             this.txtID.TabIndex = 1;
             // 
-            // txtnome
+            // txtNome
             // 
-            this.txtnome.Location = new System.Drawing.Point(12, 129);
-            this.txtnome.Name = "txtnome";
-            this.txtnome.Size = new System.Drawing.Size(536, 20);
-            this.txtnome.TabIndex = 2;
+            this.txtNome.Location = new System.Drawing.Point(12, 129);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(536, 20);
+            this.txtNome.TabIndex = 2;
             // 
             // label2
             // 
@@ -94,55 +94,55 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "UF";
             // 
-            // btnincluir
+            // btnIncluir
             // 
-            this.btnincluir.Location = new System.Drawing.Point(16, 182);
-            this.btnincluir.Name = "btnincluir";
-            this.btnincluir.Size = new System.Drawing.Size(125, 61);
-            this.btnincluir.TabIndex = 6;
-            this.btnincluir.Text = "incluir";
-            this.btnincluir.UseVisualStyleBackColor = true;
-            this.btnincluir.Click += new System.EventHandler(this.btnincluir_Click);
+            this.btnIncluir.Location = new System.Drawing.Point(16, 182);
+            this.btnIncluir.Name = "btnIncluir";
+            this.btnIncluir.Size = new System.Drawing.Size(125, 61);
+            this.btnIncluir.TabIndex = 6;
+            this.btnIncluir.Text = "incluir";
+            this.btnIncluir.UseVisualStyleBackColor = true;
+            this.btnIncluir.Click += new System.EventHandler(this.btnincluir_Click);
             // 
-            // bntalterar
+            // bntAlterar
             // 
-            this.bntalterar.Location = new System.Drawing.Point(147, 182);
-            this.bntalterar.Name = "bntalterar";
-            this.bntalterar.Size = new System.Drawing.Size(120, 61);
-            this.bntalterar.TabIndex = 7;
-            this.bntalterar.Text = "Alterar";
-            this.bntalterar.UseVisualStyleBackColor = true;
-            this.bntalterar.Click += new System.EventHandler(this.bntalterar_Click);
+            this.bntAlterar.Location = new System.Drawing.Point(147, 182);
+            this.bntAlterar.Name = "bntAlterar";
+            this.bntAlterar.Size = new System.Drawing.Size(120, 61);
+            this.bntAlterar.TabIndex = 7;
+            this.bntAlterar.Text = "Alterar";
+            this.bntAlterar.UseVisualStyleBackColor = true;
+            this.bntAlterar.Click += new System.EventHandler(this.bntAlterar_Click);
             // 
-            // bntcancelar
+            // bntCancelar
             // 
-            this.bntcancelar.Location = new System.Drawing.Point(273, 182);
-            this.bntcancelar.Name = "bntcancelar";
-            this.bntcancelar.Size = new System.Drawing.Size(120, 61);
-            this.bntcancelar.TabIndex = 8;
-            this.bntcancelar.Text = "Cancelar";
-            this.bntcancelar.UseVisualStyleBackColor = true;
-            this.bntcancelar.Click += new System.EventHandler(this.bntcancelar_Click);
+            this.bntCancelar.Location = new System.Drawing.Point(273, 182);
+            this.bntCancelar.Name = "bntCancelar";
+            this.bntCancelar.Size = new System.Drawing.Size(120, 61);
+            this.bntCancelar.TabIndex = 8;
+            this.bntCancelar.Text = "Cancelar";
+            this.bntCancelar.UseVisualStyleBackColor = true;
+            this.bntCancelar.Click += new System.EventHandler(this.bntcancelar_Click);
             // 
-            // bntexcluir
+            // bntExcluir
             // 
-            this.bntexcluir.Location = new System.Drawing.Point(399, 182);
-            this.bntexcluir.Name = "bntexcluir";
-            this.bntexcluir.Size = new System.Drawing.Size(108, 61);
-            this.bntexcluir.TabIndex = 9;
-            this.bntexcluir.Text = "Excluir";
-            this.bntexcluir.UseVisualStyleBackColor = true;
-            this.bntexcluir.Click += new System.EventHandler(this.bntexcluir_Click);
+            this.bntExcluir.Location = new System.Drawing.Point(399, 182);
+            this.bntExcluir.Name = "bntExcluir";
+            this.bntExcluir.Size = new System.Drawing.Size(108, 61);
+            this.bntExcluir.TabIndex = 9;
+            this.bntExcluir.Text = "Excluir";
+            this.bntExcluir.UseVisualStyleBackColor = true;
+            this.bntExcluir.Click += new System.EventHandler(this.bntExcluir_Click);
             // 
-            // Fechar
+            // btnFechar
             // 
-            this.Fechar.Location = new System.Drawing.Point(513, 182);
-            this.Fechar.Name = "Fechar";
-            this.Fechar.Size = new System.Drawing.Size(108, 61);
-            this.Fechar.TabIndex = 10;
-            this.Fechar.Text = "Fechar";
-            this.Fechar.UseVisualStyleBackColor = true;
-            this.Fechar.Click += new System.EventHandler(this.Fechar_Click);
+            this.btnFechar.Location = new System.Drawing.Point(513, 182);
+            this.btnFechar.Name = "btnFechar";
+            this.btnFechar.Size = new System.Drawing.Size(108, 61);
+            this.btnFechar.TabIndex = 10;
+            this.btnFechar.Text = "Fechar";
+            this.btnFechar.UseVisualStyleBackColor = true;
+            this.btnFechar.Click += new System.EventHandler(this.Fechar_Click);
             // 
             // label4
             // 
@@ -160,15 +160,15 @@
             this.txtpesquisar.Size = new System.Drawing.Size(536, 20);
             this.txtpesquisar.TabIndex = 12;
             // 
-            // bntpesquisa
+            // bntPesquisa
             // 
-            this.bntpesquisa.Location = new System.Drawing.Point(554, 255);
-            this.bntpesquisa.Name = "bntpesquisa";
-            this.bntpesquisa.Size = new System.Drawing.Size(97, 42);
-            this.bntpesquisa.TabIndex = 13;
-            this.bntpesquisa.Text = "Pesquisar";
-            this.bntpesquisa.UseVisualStyleBackColor = true;
-            this.bntpesquisa.Click += new System.EventHandler(this.bntpesquisa_Click);
+            this.bntPesquisa.Location = new System.Drawing.Point(554, 255);
+            this.bntPesquisa.Name = "bntPesquisa";
+            this.bntPesquisa.Size = new System.Drawing.Size(97, 42);
+            this.bntPesquisa.TabIndex = 13;
+            this.bntPesquisa.Text = "Pesquisar";
+            this.bntPesquisa.UseVisualStyleBackColor = true;
+            this.bntPesquisa.Click += new System.EventHandler(this.bntpesquisa_Click);
             // 
             // DgvCidades
             // 
@@ -186,18 +186,18 @@
             this.ClientSize = new System.Drawing.Size(673, 566);
             this.ControlBox = false;
             this.Controls.Add(this.DgvCidades);
-            this.Controls.Add(this.bntpesquisa);
+            this.Controls.Add(this.bntPesquisa);
             this.Controls.Add(this.txtpesquisar);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.Fechar);
-            this.Controls.Add(this.bntexcluir);
-            this.Controls.Add(this.bntcancelar);
-            this.Controls.Add(this.bntalterar);
-            this.Controls.Add(this.btnincluir);
+            this.Controls.Add(this.btnFechar);
+            this.Controls.Add(this.bntExcluir);
+            this.Controls.Add(this.bntCancelar);
+            this.Controls.Add(this.bntAlterar);
+            this.Controls.Add(this.btnIncluir);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtUF);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtnome);
+            this.Controls.Add(this.txtNome);
             this.Controls.Add(this.txtID);
             this.Controls.Add(this.label1);
             this.Name = "FrmCidades";
@@ -214,18 +214,18 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtID;
-        private System.Windows.Forms.TextBox txtnome;
+        private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtUF;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button btnincluir;
-        private System.Windows.Forms.Button bntalterar;
-        private System.Windows.Forms.Button bntcancelar;
-        private System.Windows.Forms.Button bntexcluir;
-        private System.Windows.Forms.Button Fechar;
+        private System.Windows.Forms.Button btnIncluir;
+        private System.Windows.Forms.Button bntAlterar;
+        private System.Windows.Forms.Button bntCancelar;
+        private System.Windows.Forms.Button bntExcluir;
+        private System.Windows.Forms.Button btnFechar;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtpesquisar;
-        private System.Windows.Forms.Button bntpesquisa;
+        private System.Windows.Forms.Button bntPesquisa;
         private System.Windows.Forms.DataGridView DgvCidades;
     }
 }

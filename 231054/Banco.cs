@@ -63,10 +63,16 @@ namespace _231054
                                            "(id integer auto_increment primary key,"+
                                            "nome char(40),"+
                                            "uf char(02))", Conexao);
+
+                Comando= new MySqlCommand("CREATE TABLE IF NOT EXISTS marcas" +
+                                           "(id integer auto_increment primary key," +
+                                           "nome char(40))", Conexao);
                 Comando.ExecuteNonQuery();
                 // chama a funcao para fechar a conexão com o banco
                 FecharConexao();
             }
+
+
             catch (Exception e)
             {
                 MessageBox.Show(e.Message, "ERRO", MessageBoxButtons.OK, MessageBoxIcon.Error);
