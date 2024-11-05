@@ -59,12 +59,17 @@ namespace _231054
                 // executa a query no mysql (raio do Workbench)
                 Comando.ExecuteNonQuery();
 
-                Comando= new MySqlCommand("CREATE TABLE IF NOT EXISTS Cidades"+
-                                           "(id integer auto_increment primary key,"+
-                                           "nome char(40),"+
+                Comando= new MySqlCommand("CREATE TABLE IF NOT EXISTS Cidades" +
+                                           "(id integer auto_increment primary key," +
+                                           "nome char(40)," +
                                            "uf char(02))", Conexao);
+                Comando.ExecuteNonQuery();
+                Comando = new MySqlCommand("CREATE TABLE IF NOT EXISTS marcas" +
+                                           "(id integer auto_increment primary key," +
+                                           "nome char(40))", Conexao);
+                Comando.ExecuteNonQuery();
 
-                Comando= new MySqlCommand("CREATE TABLE IF NOT EXISTS marcas" +
+                Comando = new MySqlCommand("CREATE TABLE IF NOT EXISTS categoria" +
                                            "(id integer auto_increment primary key," +
                                            "nome char(40))", Conexao);
                 Comando.ExecuteNonQuery();

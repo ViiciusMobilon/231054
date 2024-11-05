@@ -68,9 +68,9 @@ namespace _231054.Views
         {
             if (DgvCidades.RowCount > 0) 
             {
-             txtUF.Text = DgvCidades.CurrentRow.Cells["id"].Value.ToString();
+             txtID.Text = DgvCidades.CurrentRow.Cells["id"].Value.ToString();
              txtNome.Text = DgvCidades.CurrentRow.Cells["nome"].Value.ToString();
-                txtUF.Text = DgvCidades.CurrentRow.Cells["uf"].Value.ToString();
+             txtUF.Text = DgvCidades.CurrentRow.Cells["uf"].Value.ToString();
             }
         }
 
@@ -83,19 +83,7 @@ namespace _231054.Views
             Close();
         }
 
-        private void bntAlterar_Click(object sender, EventArgs e)
-        {
-            if (txtID.Text == string.Empty) return;
-            c = new Cidade()
-            {
-                id = int.Parse(txtID.Text),
-                nome = txtNome.Text,
-                uf = txtUF.Text
-            };
-            c.Alterar();
-            LimparControles();
-            carregarGrid("");
-        }
+        
 
         private void bntExcluir_Click(object sender, EventArgs e)
         {
@@ -110,7 +98,22 @@ namespace _231054.Views
                 c.Excluir();
                 LimparControles();
                 carregarGrid("");
+                
             }
+        }
+
+        private void bntAlterar_Click(object sender, EventArgs e)
+        {
+            if (txtID.Text == string.Empty) return;
+            c = new Cidade()
+            {
+                id = int.Parse(txtID.Text),
+                nome = txtNome.Text,
+                uf = txtUF.Text
+            };
+            c.Alterar();
+            LimparControles();
+            carregarGrid("");
         }
     }
 }
