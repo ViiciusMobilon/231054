@@ -1,6 +1,6 @@
 ﻿namespace _231054.Views
 {
-    partial class Categoria
+    partial class FrmCategoria
     {
         /// <summary>
         /// Required designer variable.
@@ -51,6 +51,7 @@
             this.DgvCategorias.Name = "DgvCategorias";
             this.DgvCategorias.Size = new System.Drawing.Size(536, 134);
             this.DgvCategorias.TabIndex = 29;
+            this.DgvCategorias.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvCategorias_CellClick);
             // 
             // bntPesquisa
             // 
@@ -60,6 +61,7 @@
             this.bntPesquisa.TabIndex = 28;
             this.bntPesquisa.Text = "Pesquisar";
             this.bntPesquisa.UseVisualStyleBackColor = true;
+            this.bntPesquisa.Click += new System.EventHandler(this.bntPesquisa_Click);
             // 
             // txtpesquisar
             // 
@@ -85,6 +87,7 @@
             this.btnFechar.TabIndex = 25;
             this.btnFechar.Text = "Fechar";
             this.btnFechar.UseVisualStyleBackColor = true;
+            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
             // 
             // bntExcluir
             // 
@@ -94,6 +97,7 @@
             this.bntExcluir.TabIndex = 24;
             this.bntExcluir.Text = "Excluir";
             this.bntExcluir.UseVisualStyleBackColor = true;
+            this.bntExcluir.Click += new System.EventHandler(this.bntExcluir_Click);
             // 
             // bntCancelar
             // 
@@ -103,6 +107,7 @@
             this.bntCancelar.TabIndex = 23;
             this.bntCancelar.Text = "Cancelar";
             this.bntCancelar.UseVisualStyleBackColor = true;
+            this.bntCancelar.Click += new System.EventHandler(this.bntCancelar_Click);
             // 
             // bntAlterar
             // 
@@ -112,6 +117,7 @@
             this.bntAlterar.TabIndex = 22;
             this.bntAlterar.Text = "Alterar";
             this.bntAlterar.UseVisualStyleBackColor = true;
+            this.bntAlterar.Click += new System.EventHandler(this.bntAlterar_Click);
             // 
             // btnIncluir
             // 
@@ -155,7 +161,7 @@
             this.label1.TabIndex = 15;
             this.label1.Text = "Código";
             // 
-            // Categoria
+            // FrmCategoria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -173,7 +179,7 @@
             this.Controls.Add(this.txtNome);
             this.Controls.Add(this.txtID);
             this.Controls.Add(this.label1);
-            this.Name = "Categoria";
+            this.Name = "FrmCategoria";
             this.Text = "Categoria";
             ((System.ComponentModel.ISupportInitialize)(this.DgvCategorias)).EndInit();
             this.ResumeLayout(false);

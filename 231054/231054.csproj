@@ -107,21 +107,21 @@
     </Compile>
     <Compile Include="Models\Categoria.cs" />
     <Compile Include="Models\Cidade.cs" />
-    <Compile Include="Views\Clieante.cs">
+    <Compile Include="Views\FrmCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Clieante.Designer.cs">
-      <DependentUpon>Clieante.cs</DependentUpon>
+    <Compile Include="Views\FrmCliente.Designer.cs">
+      <DependentUpon>FrmCliente.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Cliente.cs" />
     <Compile Include="Models\Marca.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Views\Categoria.cs">
+    <Compile Include="Views\FrmCategoria.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Categoria.Designer.cs">
-      <DependentUpon>Categoria.cs</DependentUpon>
+    <Compile Include="Views\FrmCategoria.Designer.cs">
+      <DependentUpon>FrmCategoria.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\FrmCidades.cs">
       <SubType>Form</SubType>
@@ -147,8 +147,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Views\Categoria.resx">
-      <DependentUpon>Categoria.cs</DependentUpon>
+    <EmbeddedResource Include="Views\FrmCategoria.resx">
+      <DependentUpon>FrmCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FrmCliente.resx">
+      <DependentUpon>FrmCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\FrmCidades.resx">
       <DependentUpon>FrmCidades.cs</DependentUpon>
