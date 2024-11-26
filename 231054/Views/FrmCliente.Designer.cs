@@ -51,7 +51,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.mskCPF = new System.Windows.Forms.MaskedTextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.dtoDataNasc = new System.Windows.Forms.DateTimePicker();
+            this.dtpDataNasc = new System.Windows.Forms.DateTimePicker();
+            this.ofdArquivo = new System.Windows.Forms.OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.DgvClientes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picFoto)).BeginInit();
             this.SuspendLayout();
@@ -63,6 +64,7 @@
             this.DgvClientes.Name = "DgvClientes";
             this.DgvClientes.Size = new System.Drawing.Size(536, 134);
             this.DgvClientes.TabIndex = 42;
+            this.DgvClientes.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvClientes_CellClick);
             // 
             // bntPesquisa
             // 
@@ -72,6 +74,7 @@
             this.bntPesquisa.TabIndex = 41;
             this.bntPesquisa.Text = "Pesquisar";
             this.bntPesquisa.UseVisualStyleBackColor = true;
+            this.bntPesquisa.Click += new System.EventHandler(this.bntPesquisa_Click);
             // 
             // txtpesquisar
             // 
@@ -97,6 +100,7 @@
             this.btnFechar.TabIndex = 38;
             this.btnFechar.Text = "Fechar";
             this.btnFechar.UseVisualStyleBackColor = true;
+            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
             // 
             // bntExcluir
             // 
@@ -106,6 +110,7 @@
             this.bntExcluir.TabIndex = 37;
             this.bntExcluir.Text = "Excluir";
             this.bntExcluir.UseVisualStyleBackColor = true;
+            this.bntExcluir.Click += new System.EventHandler(this.bntExcluir_Click);
             // 
             // bntCancelar
             // 
@@ -115,6 +120,7 @@
             this.bntCancelar.TabIndex = 36;
             this.bntCancelar.Text = "Cancelar";
             this.bntCancelar.UseVisualStyleBackColor = true;
+            this.bntCancelar.Click += new System.EventHandler(this.bntCancelar_Click);
             // 
             // bntAlterar
             // 
@@ -124,6 +130,7 @@
             this.bntAlterar.TabIndex = 35;
             this.bntAlterar.Text = "Alterar";
             this.bntAlterar.UseVisualStyleBackColor = true;
+            this.bntAlterar.Click += new System.EventHandler(this.bntAlterar_Click);
             // 
             // btnIncluir
             // 
@@ -209,6 +216,7 @@
             this.picFoto.Size = new System.Drawing.Size(205, 207);
             this.picFoto.TabIndex = 49;
             this.picFoto.TabStop = false;
+            this.picFoto.Click += new System.EventHandler(this.picFoto_Click);
             // 
             // cboCidades
             // 
@@ -252,20 +260,24 @@
             this.label7.TabIndex = 55;
             this.label7.Text = "CPF";
             // 
-            // dtoDataNasc
+            // dtpDataNasc
             // 
-            this.dtoDataNasc.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtoDataNasc.Location = new System.Drawing.Point(247, 235);
-            this.dtoDataNasc.Name = "dtoDataNasc";
-            this.dtoDataNasc.Size = new System.Drawing.Size(200, 20);
-            this.dtoDataNasc.TabIndex = 56;
+            this.dtpDataNasc.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpDataNasc.Location = new System.Drawing.Point(247, 235);
+            this.dtpDataNasc.Name = "dtpDataNasc";
+            this.dtpDataNasc.Size = new System.Drawing.Size(200, 20);
+            this.dtpDataNasc.TabIndex = 56;
+            // 
+            // ofdArquivo
+            // 
+            this.ofdArquivo.FileName = "ofdArquivo";
             // 
             // FrmCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 677);
-            this.Controls.Add(this.dtoDataNasc);
+            this.Controls.Add(this.dtpDataNasc);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.mskCPF);
             this.Controls.Add(this.txtRenda);
@@ -291,6 +303,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FrmCliente";
             this.Text = "Clieante";
+            this.Load += new System.EventHandler(this.FrmCliente_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.DgvClientes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picFoto)).EndInit();
             this.ResumeLayout(false);
@@ -323,6 +336,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.MaskedTextBox mskCPF;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.DateTimePicker dtoDataNasc;
+        private System.Windows.Forms.DateTimePicker dtpDataNasc;
+        private System.Windows.Forms.OpenFileDialog ofdArquivo;
     }
 }

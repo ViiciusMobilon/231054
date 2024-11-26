@@ -27,7 +27,7 @@ namespace _231054.Models
                 // abre a conexao com o banco
                 Banco.AbrirConexao();
                 //alimenta o metodo command com a intrucao e indica a conexao utilizada
-                Banco.Comando = new MySqlCommand("INSERT INTO cidades (nome, uf) VALUES(@nome,  @uf)", Banco.Conexao);
+                Banco.Comando = new MySqlCommand("INSERT INTO Cidades (nome, uf) VALUES(@nome,  @uf)", Banco.Conexao);
                 // cria os parametros utilizados na instrucao SQL com seu respectivo conteudo
                 Banco.Comando.Parameters.AddWithValue("@nome", nome);//parametro string
                 Banco.Comando.Parameters.AddWithValue("@uf", uf);
@@ -48,7 +48,7 @@ namespace _231054.Models
                 // abre a conexao com o banco
                 Banco.AbrirConexao();
                 //alimenta o metodo command com a intrucao e indica a conexao utilizada
-                Banco.Comando = new MySqlCommand("Update cidades set nome = @nome, uf = @uf where id = @id", Banco.Conexao);
+                Banco.Comando = new MySqlCommand("Update Cidades set nome = @nome, uf = @uf where id = @id", Banco.Conexao);
                 // cria os parametros utilizados na instrucao SQL com seu respectivo conteudo
                 Banco.Comando.Parameters.AddWithValue("@nome", nome);//parametro string
                 Banco.Comando.Parameters.AddWithValue("@uf", uf);
@@ -71,7 +71,7 @@ namespace _231054.Models
                 // abre a conexao com o banco
                 Banco.AbrirConexao();
                 //alimenta o metodo command com a intrucao e indica a conexao utilizada
-                Banco.Comando = new MySqlCommand("delete from cidades where id = @id", Banco.Conexao);
+                Banco.Comando = new MySqlCommand("delete from Cidades where id = @id", Banco.Conexao);
                 // cria os parametros utilizados na instrucao SQL com seu respectivo conteudo
                 Banco.Comando.Parameters.AddWithValue("@id", id);
 
@@ -91,7 +91,7 @@ namespace _231054.Models
             try
             {
                 Banco.AbrirConexao();
-                Banco.Comando = new MySqlCommand("SELECT * FROM cidades where nome like @nome " +
+                Banco.Comando = new MySqlCommand("SELECT * FROM Cidades where nome like @nome " +
                                                                 "order by nome", Banco.Conexao);
                 Banco.Comando.Parameters.AddWithValue("@nome", nome + "%");
                 Banco.Adaptador = new MySqlDataAdapter(Banco.Comando);
