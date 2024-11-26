@@ -92,7 +92,7 @@ namespace _231054
                                            "idMarca integer," +
                                            "estoque decimal(10,3)," +
                                            "valorVenda decimal(10,3)," +
-                                           "foto varchar(100)", Conexao);
+                                           "foto varchar(100))", Conexao);
                 Comando.ExecuteNonQuery();
 
                 // chama a funcao para fechar a conexão com o banco

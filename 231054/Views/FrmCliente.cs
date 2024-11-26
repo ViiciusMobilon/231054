@@ -121,7 +121,7 @@ namespace _231054.Models
         private void bntExcluir_Click(object sender, EventArgs e)
         {
             if (txtId.Text == "") return;
-            if (MessageBox.Show("Deseja excluir a cliete?", "Exclusão",
+            if (MessageBox.Show("Deseja excluir o cliente?", "Exclusão",
                 MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 cl = new Cliente()
@@ -169,5 +169,7 @@ namespace _231054.Models
                 DgvClientes.Columns["foto"].Visible = false;
            
         }
+
+        
     }
 }

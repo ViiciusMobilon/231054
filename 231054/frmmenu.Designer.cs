@@ -34,6 +34,7 @@
             this.marcasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.categoriasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pordutoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,7 +54,8 @@
             this.cidadesToolStripMenuItem,
             this.marcasToolStripMenuItem,
             this.categoriasToolStripMenuItem,
-            this.clienteToolStripMenuItem});
+            this.clienteToolStripMenuItem,
+            this.pordutoToolStripMenuItem});
             this.cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
             this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
             this.cadastroToolStripMenuItem.Text = "cadastro";
@@ -86,6 +88,13 @@
             this.clienteToolStripMenuItem.Text = "cliente";
             this.clienteToolStripMenuItem.Click += new System.EventHandler(this.clienteToolStripMenuItem_Click);
             // 
+            // pordutoToolStripMenuItem
+            // 
+            this.pordutoToolStripMenuItem.Name = "pordutoToolStripMenuItem";
+            this.pordutoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.pordutoToolStripMenuItem.Text = "Porduto";
+            this.pordutoToolStripMenuItem.Click += new System.EventHandler(this.pordutoToolStripMenuItem_Click);
+            // 
             // frmmenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -112,6 +121,7 @@
         private System.Windows.Forms.ToolStripMenuItem marcasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem categoriasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem clienteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pordutoToolStripMenuItem;
     }
 }
 
